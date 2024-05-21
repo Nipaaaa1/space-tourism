@@ -17,6 +17,10 @@ const config: Config = {
         'bellefair': ['var(--font-bellefair)'],
         'barlow': ['var(--font-barlow)'],
         'barlow-condensed': ['var(--font-barlow-condensed)'],
+      },
+      colors: {
+        'dark-navy': 'hsl(230, 35%, 7%)',
+        'light-blue': 'hsl(231, 77%, 90%)',
       }
     },
   },
