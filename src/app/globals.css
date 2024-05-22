@@ -76,7 +76,7 @@
 }
 
 .heading-xl {
-  @apply font-bellefair text-[5rem] xl:text-[9rem];
+  @apply font-bellefair text-[5rem] md:text-[9rem];
 }
 
 .heading-l {
