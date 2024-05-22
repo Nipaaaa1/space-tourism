@@ -13,7 +13,7 @@ export default function Home() {
         alt=""
       />
       <Navbar />
-      <section className="flex flex-1 flex-col   p-6">
+      <section className="flex flex-1 flex-col p-6 md:gap-[66px] md:p-32">
         <div className="text-light-blue flex flex-col gap-6 text-center">
           <span className="heading-xs">SO, YOU WANT TO TRAVEL TO</span>
           <h1 className="heading-xl text-white">SPACE</h1>
@@ -25,12 +25,11 @@ export default function Home() {
           </p>
         </div>
         <div className="grid flex-1 place-items-center">
-          <Link
-            href="/destination"
-            className="text-dark-navy heading-s rounded-full bg-white px-[33.5px] py-[61.5px]"
-          >
-            EXPLORE
-          </Link>
+          <div className="grid size-36 place-items-center rounded-full bg-white md:size-[272px]">
+            <Link href="/destination" className="text-dark-navy heading-s ">
+              EXPLORE
+            </Link>
+          </div>
         </div>
       </section>
     </main>
