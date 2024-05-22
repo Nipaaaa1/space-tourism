@@ -31,3 +31,39 @@ body {
     text-wrap: balance;
   }
 }
+
+.heading-xl {
+  @apply text-[5rem] xl:text-[9rem] font-bellefair 
+}
+
+.heading-l {
+  @apply text-[3.5rem] md:text-[5rem] xl:text-[6rem] font-bellefair
+}
+
+.heading-m {
+  @apply text-[1.5rem] md:text-[2.5rem] xl:text-[3.5rem] font-bellefair 
+}
+
+.heading-s {
+  @apply text-[1.125rem] md:text-[1.5rem] xl:text-[2rem] font-bellefair
+}
+
+.heading-xs {
+  @apply text-[1rem] md:text-[1.25rem] xl:text-[1.75rem] font-barlow-condensed tracking-[4px]
+}
+
+.subheading-l {
+  @apply text-[1.75rem] font-bellefair
+}
+
+.subheading-s {
+  @apply text-[0.875rem] font-barlow-condensed tracking-[2px]
+}
+
+.navigation {
+  @apply text-[0.875rem] xl:text-[1rem] font-barlow-condensed tracking-[2px]
+}
+
+.body {
+  @apply text-[0.9375rem] md:text-[1rem] xl:text-[1.125rem] leading-[1.8] font-barlow
+}
