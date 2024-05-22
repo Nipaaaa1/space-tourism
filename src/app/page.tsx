@@ -34,7 +34,10 @@ export default function Home() {
           </div>
           <div className="grid flex-1 place-items-center xl:justify-end">
             <div className="grid size-36 place-items-center rounded-full bg-white md:size-[272px]">
-              <Link href="/destination" className="text-dark-navy heading-s ">
+              <Link
+                href="/destination"
+                className="text-dark-navy heading-s grid size-full place-items-center"
+              >
                 EXPLORE
               </Link>
             </div>
