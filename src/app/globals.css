@@ -104,7 +104,7 @@
 }
 
 .navigation {
-  @apply font-barlow-condensed text-[0.875rem] tracking-[2px] xl:text-[1rem];
+  @apply font-barlow-condensed text-[1rem] tracking-[2px];
 }
 
 .body {
