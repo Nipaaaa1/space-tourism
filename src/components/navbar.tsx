@@ -6,15 +6,16 @@ import Link from "next/link";
 
 export const Navbar = () => {
   return (
-    <nav className="flex w-full justify-between p-6 md:p-0">
-      <div className="md:px-10 md:py-6">
+    <nav className="relative flex w-full justify-between p-6 md:p-0 xl:mt-10 xl:justify-end">
+      <div className="md:px-10 md:py-6 xl:flex xl:w-full xl:items-center xl:gap-16 xl:pl-16">
         <Image
           src={logo}
           className="size-10 md:size-12"
           alt="Space Tourism logo"
         />
+        <div className="absolute left-[176px] z-20 hidden h-[1px] w-[560px] bg-[#979797] xl:block" />
       </div>
-      <ul className="navigation hidden w-full items-center justify-end gap-12 bg-white/5 pr-10 text-white  backdrop-blur-xl *:py-6 md:flex">
+      <ul className="navigation hidden w-full items-center justify-end gap-12 bg-white/5 pr-10 text-white backdrop-blur-xl *:py-6 md:flex xl:w-max xl:pl-[10rem] xl:pr-16">
         <li className="flex h-full border-b-[3px] border-white">
           <Link className="flex gap-3 self-center" href="/">
             <span className="font-bold">00</span>Home
