@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const Navbar = () => {
   return (
-    <nav className="fixed flex w-full justify-between p-6">
+    <nav className="flex w-full justify-between p-6">
       <div>
         <Image src={logo} className="size-10" alt="Space Tourism logo" />
       </div>
