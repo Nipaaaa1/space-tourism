@@ -2,8 +2,6 @@ import logo from "@/assets/logo.svg";
 import hamburgerMenu from "@/assets/menu.svg";
 import Image from "next/image";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
-import Link from "next/link";
-import { cn } from "@/lib/utils";
 import { MobileNavlink, Navlink } from "./navlinks";
 
 export const Navbar = () => {
