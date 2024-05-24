@@ -12,35 +12,35 @@ export default function Destination() {
         alt=""
         fill={true}
       />
-      <section className="flex flex-1 flex-col p-6 text-white md:p-10">
+      <section className="flex flex-1 flex-col p-6 text-white md:p-10 xl:py-12">
         {/* box-1 */}
-        <div className="space-y-6">
+        <div className="flex flex-1 flex-col gap-6 md:mx-auto">
           <h1 className="heading-xs flex justify-center gap-6 md:justify-start">
             <span className="font-bold text-white/25">01</span>PICK YOUR
             DESTINATION
           </h1>
           {/* box-2 */}
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 xl:grid xl:flex-1 xl:grid-cols-2 xl:items-center">
             {/* moon image */}
-            <div className="grid w-full place-items-center py-[26.6px] md:py-[42px]">
+            <div className="grid w-full place-items-center py-[26.6px] md:py-[42px] xl:h-full xl:px-[29.5px]">
               <Image
                 src={MoonImage}
-                className="size-[150px] md:size-[300px]"
+                className="size-[150px] md:size-[300px] xl:size-[480px]"
                 alt=""
               />
             </div>
             {/* details */}
-            <div className="md:py-[11.5px]">
-              <div className="space-y-6 md:mx-auto md:max-w-[514px]">
+            <div className="md:py-[11.5px] xl:w-full">
+              <div className="space-y-6 md:mx-auto md:max-w-[514px] xl:mx-0 xl:px-[47px]">
                 {/* destination tab */}
-                <ul className="navigation flex h-8 items-start justify-center gap-8 text-light-blue *:h-full">
+                <ul className="navigation flex h-8 items-start justify-center gap-8 text-light-blue *:h-full xl:justify-start">
                   <li className="border-b-[3px] text-white">MOON</li>
                   <li>MARS</li>
                   <li>EUROPA</li>
                   <li>TITAN</li>
                 </ul>
                 {/* detail paragraph */}
-                <div className="space-y-4 text-center">
+                <div className="space-y-4 text-center xl:text-left">
                   <h2 className="heading-l">MOON</h2>
                   <p className="body text-light-blue">
                     See our planet as you’ve never seen it before. A perfect
@@ -52,13 +52,13 @@ export default function Destination() {
                 <Separator className="bg-[#979797]" />
                 {/* distance */}
                 <div className="flex flex-col gap-6 md:flex-row">
-                  <div className="w-full space-y-3 text-center">
+                  <div className="w-full space-y-3 text-center xl:text-left">
                     <h3 className="subheading-s text-light-blue">
                       AVG. DISTANCE
                     </h3>
                     <span className="subheading-l">384,400 KM</span>
                   </div>
-                  <div className="w-full space-y-3 text-center">
+                  <div className="w-full space-y-3 text-center xl:text-left">
                     <h3 className="subheading-s text-light-blue">
                       EST. TRAVEL TIME
                     </h3>
