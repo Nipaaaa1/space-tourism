@@ -3,6 +3,8 @@ import hamburgerMenu from "@/assets/menu.svg";
 import Image from "next/image";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { MobileNavlink, Navlink } from "./navlinks";
 
 export const Navbar = () => {
   return (
@@ -16,26 +18,10 @@ export const Navbar = () => {
         <div className="absolute left-[176px] z-20 hidden h-[1px] w-[560px] bg-[#979797] xl:block" />
       </div>
       <ul className="navigation hidden w-full items-center justify-end gap-12 bg-white/5 pr-10 text-white backdrop-blur-xl *:py-6 md:flex xl:w-max xl:pl-[10rem] xl:pr-16">
-        <li className="flex h-full border-b-[3px] border-white">
-          <Link className="flex gap-3 self-center" href="/">
-            <span className="font-bold">00</span>Home
-          </Link>
-        </li>
-        <li className="flex h-full">
-          <Link className="flex gap-3 self-center" href="/destination">
-            <span className="font-bold">01</span>Destination
-          </Link>
-        </li>
-        <li className="flex h-full">
-          <Link className="flex gap-3 self-center" href="/crew">
-            <span className="font-bold">02</span>Crew
-          </Link>
-        </li>
-        <li className="flex h-full">
-          <Link className="flex gap-3 self-center" href="/technology">
-            <span className="font-bold">03</span>Technology
-          </Link>
-        </li>
+        <Navlink index="00" name="HOME" href="/" />
+        <Navlink index="01" name="DESTINATION" href="/destination" />
+        <Navlink index="02" name="CREW" href="/crew" />
+        <Navlink index="03" name="TECHNOLOGY" href="/technology" />
       </ul>
       <Sheet>
         <SheetTrigger className="md:hidden">
@@ -43,26 +29,10 @@ export const Navbar = () => {
         </SheetTrigger>
         <SheetContent className="border-none bg-transparent pl-8 pr-0 backdrop-blur-xl">
           <ul className="navigation mt-[144px] space-y-8 text-white">
-            <li>
-              <Link className="flex gap-3 border-r-[3px] border-white" href="/">
-                <span className="font-bold">00</span>Home
-              </Link>
-            </li>
-            <li>
-              <Link className="flex gap-3" href="/destination">
-                <span className="font-bold">01</span>Destination
-              </Link>
-            </li>
-            <li>
-              <Link className="flex gap-3" href="/crew">
-                <span className="font-bold">02</span>Crew
-              </Link>
-            </li>
-            <li>
-              <Link className="flex gap-3" href="/technology">
-                <span className="font-bold">03</span>Technology
-              </Link>
-            </li>
+            <MobileNavlink index="00" name="HOME" href="/" />
+            <MobileNavlink index="01" name="DESTINATION" href="/destination" />
+            <MobileNavlink index="02" name="CREW" href="/crew" />
+            <MobileNavlink index="03" name="TECHNOLOGY" href="/technology" />
           </ul>
         </SheetContent>
       </Sheet>
