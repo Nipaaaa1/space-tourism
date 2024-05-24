@@ -1,6 +1,5 @@
 import Image from "next/image";
 import bgImage from "@/assets/destination/bg-image.png";
-import { Separator } from "@/components/ui/separator";
 import { DestinationImage } from "@/components/destination/image";
 import { TabButton } from "@/components/destination/tab-button";
 import data from "@/app/data.json";

@@ -1,7 +1,6 @@
 import bgImage from "@/assets/homepage/bg-mobile.png";
 import desktopBgImage from "@/assets/homepage/bg-desktop.png";
 import Image from "next/image";
-import Link from "next/link";
 import { Explore } from "@/components/explore";
 
 export default function Home() {
