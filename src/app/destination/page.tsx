@@ -1,9 +1,13 @@
 import Image from "next/image";
 import bgImage from "@/assets/destination/bg-image.png";
-import MoonImage from "@/assets/destination/moon-image.png";
 import { Separator } from "@/components/ui/separator";
+import { DestinationImage } from "@/components/destination/image";
+import { TabButton } from "@/components/destination/tab-button";
+import data from "@/app/data.json";
+import { DestinationDetail } from "@/components/destination/detail";
 
 export default function Destination() {
+  const navigation = ["MOON", "MARS", "EUROPA", "TITAN"];
   return (
     <>
       <Image
@@ -23,48 +27,21 @@ export default function Destination() {
           <div className="flex flex-col gap-8 xl:grid xl:flex-1 xl:grid-cols-2 xl:items-center">
             {/* moon image */}
             <div className="grid w-full place-items-center py-[26.6px] md:py-[42px] xl:h-full xl:px-[29.5px]">
-              <Image
-                src={MoonImage}
-                className="size-[150px] md:size-[300px] xl:size-[480px]"
-                alt=""
-              />
+              <DestinationImage />
             </div>
             {/* details */}
             <div className="md:py-[11.5px] xl:w-full">
               <div className="space-y-6 md:mx-auto md:max-w-[514px] xl:mx-0 xl:px-[47px]">
                 {/* destination tab */}
                 <ul className="navigation flex h-8 items-start justify-center gap-8 text-light-blue *:h-full xl:justify-start">
-                  <li className="border-b-[3px] text-white">MOON</li>
-                  <li>MARS</li>
-                  <li>EUROPA</li>
-                  <li>TITAN</li>
+                  {navigation.map((value, index) => (
+                    <TabButton key={index} index={index}>
+                      {value}
+                    </TabButton>
+                  ))}
                 </ul>
                 {/* detail paragraph */}
-                <div className="space-y-4 text-center xl:text-left">
-                  <h2 className="heading-l">MOON</h2>
-                  <p className="body text-light-blue">
-                    See our planet as you’ve never seen it before. A perfect
-                    relaxing trip away to help regain perspective and come back
-                    refreshed. While you’re there, take in some history by
-                    visiting the Luna 2 and Apollo 11 landing sites.
-                  </p>
-                </div>
-                <Separator className="bg-[#979797]" />
-                {/* distance */}
-                <div className="flex flex-col gap-6 md:flex-row">
-                  <div className="w-full space-y-3 text-center xl:text-left">
-                    <h3 className="subheading-s text-light-blue">
-                      AVG. DISTANCE
-                    </h3>
-                    <span className="subheading-l">384,400 KM</span>
-                  </div>
-                  <div className="w-full space-y-3 text-center xl:text-left">
-                    <h3 className="subheading-s text-light-blue">
-                      EST. TRAVEL TIME
-                    </h3>
-                    <span className="subheading-l">3 DAYS</span>
-                  </div>
-                </div>
+                <DestinationDetail data={data} />
               </div>
             </div>
           </div>
