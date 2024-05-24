@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="relative flex min-h-svh flex-col">
+    <>
       <Image
         src={bgImage}
         className="absolute inset-0 -z-[1] object-cover xl:hidden"
@@ -19,10 +19,9 @@ export default function Home() {
         fill={true}
         alt=""
       />
-      <Navbar />
       <section className="flex flex-1 flex-col p-6 md:gap-[66px] md:p-32 xl:flex-row xl:items-end xl:px-[10.3125rem] xl:py-32">
         <div className="flex w-full flex-1 flex-col md:gap-[66px] xl:flex-row">
-          <div className="text-light-blue flex flex-col gap-6 text-center xl:max-w-[540px] xl:text-left">
+          <div className="flex flex-col gap-6 text-center text-light-blue xl:max-w-[540px] xl:text-left">
             <span className="heading-xs">SO, YOU WANT TO TRAVEL TO</span>
             <h1 className="heading-xl text-white">SPACE</h1>
             <p className="body">
@@ -36,7 +35,7 @@ export default function Home() {
             <div className="grid size-36 place-items-center rounded-full bg-white md:size-[272px]">
               <Link
                 href="/destination"
-                className="text-dark-navy heading-s grid size-full place-items-center"
+                className="heading-s grid size-full place-items-center text-dark-navy"
               >
                 EXPLORE
               </Link>
@@ -44,6 +43,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 }

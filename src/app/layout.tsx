@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { barlow, barlowCondensed, bellefair } from "@/utils/font";
+import { Navbar } from "@/components/navbar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,7 +15,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${bellefair.variable} ${barlow.variable} ${barlowCondensed.variable}`}>{children}</body>
+      <body
+        className={`${bellefair.variable} ${barlow.variable} ${barlowCondensed.variable}`}
+      >
+        <main className="relative flex min-h-svh flex-col">
+          <Navbar />
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
