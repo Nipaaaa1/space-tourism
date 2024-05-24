@@ -2,6 +2,7 @@ import bgImage from "@/assets/homepage/bg-mobile.png";
 import desktopBgImage from "@/assets/homepage/bg-desktop.png";
 import Image from "next/image";
 import Link from "next/link";
+import { Explore } from "@/components/explore";
 
 export default function Home() {
   return (
@@ -31,14 +32,7 @@ export default function Home() {
             </p>
           </div>
           <div className="grid flex-1 place-items-center xl:justify-end">
-            <div className="grid size-36 place-items-center rounded-full bg-white md:size-[272px]">
-              <Link
-                href="/destination"
-                className="heading-s grid size-full place-items-center text-dark-navy"
-              >
-                EXPLORE
-              </Link>
-            </div>
+            <Explore />
           </div>
         </div>
       </section>
