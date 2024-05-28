@@ -30,7 +30,7 @@ export default function Destination() {
             </div>
             {/* details */}
             <div className="md:py-[11.5px] xl:w-full">
-              <div className="space-y-6 md:mx-auto md:max-w-[514px] xl:mx-0 xl:px-[47px]">
+              <div className="space-y-6 md:mx-auto md:max-w-[514px] xl:mx-0 xl:px-10">
                 {/* destination tab */}
                 <ul className="navigation flex h-8 items-start justify-center gap-8 text-light-blue *:h-full xl:justify-start">
                   {navigation.map((value, index) => (
