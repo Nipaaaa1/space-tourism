@@ -14,7 +14,7 @@ export default function CrewPage() {
         alt=""
         fill={true}
       />
-      <section className="flex flex-1 flex-col p-6 text-white md:p-10">
+      <section className="flex flex-1 flex-col overflow-clip p-6 text-white md:p-10">
         <div className="flex w-full flex-1 flex-col items-center gap-6 md:mx-auto xl:max-w-[1110px]">
           <PageTitle pageIndex="02" pageTitle="MEET YOUR CREW" />
           <div className="flex flex-col gap-8 xl:grid xl:flex-1 xl:grid-cols-2">
