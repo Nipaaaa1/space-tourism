@@ -14,8 +14,8 @@ export default function TechnologyPage() {
         alt=""
         fill={true}
       />
-      <section className="flex flex-1 flex-col overflow-clip p-6 text-white md:p-10">
-        <div className="flex w-full flex-1 flex-col items-center gap-6 md:mx-auto xl:px-[165px]">
+      <section className="flex flex-1 flex-col overflow-clip p-6 text-white md:p-10 xl:px-0">
+        <div className="flex w-full flex-1 flex-col items-center gap-6 md:mx-auto xl:pl-[165px]">
           <PageTitle pageIndex="03" pageTitle="SPACE LAUNCH 101" />
           <TechnologyContent />
         </div>
