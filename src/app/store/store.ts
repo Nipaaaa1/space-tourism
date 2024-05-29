@@ -10,6 +10,11 @@ type CrewStoreTypes = {
   changeCrewIndex: (newCrewIndex: number) => void;
 };
 
+type TechStoreTypes = {
+  currentTechIndex: number;
+  changeTechIndex: (newTechIndex: number) => void;
+};
+
 export const useStore = create<TabStore>((set) => ({
   currentTab: 0,
   changeTab: (newTabIndex: number) => {
@@ -21,5 +26,12 @@ export const useCrewStore = create<CrewStoreTypes>((set) => ({
   currentCrewIndex: 0,
   changeCrewIndex: (newCrewIndex) => {
     set({ currentCrewIndex: newCrewIndex });
+  },
+}));
+
+export const useTechStore = create<TechStoreTypes>((set) => ({
+  currentTechIndex: 0,
+  changeTechIndex: (newTechIndex) => {
+    set({ currentTechIndex: newTechIndex });
   },
 }));
