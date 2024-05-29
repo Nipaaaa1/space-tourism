@@ -24,7 +24,9 @@ export const TechnologyPagination = () => {
 const PaginationButton = ({ index, isActive }: PaginationButtonProps) => {
   const styles = cn(
     "size-10 md:size-14 xl:size-20 rounded-full heading-s",
-    isActive ? "bg-white text-dark-navy" : "border border-white/25",
+    isActive
+      ? "bg-white text-dark-navy"
+      : "border border-white/25 hover:border-white transition ease-in-out",
   );
   return <button className={styles}>{index}</button>;
 };
