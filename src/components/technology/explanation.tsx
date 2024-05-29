@@ -1,6 +1,6 @@
 export const TechnologyExplanation = () => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 md:max-w-lg">
       <div className="flex flex-col items-center gap-4">
         <span className="heading-s text-white/50">THE TERMINOLOGY...</span>
         <h2 className="heading-m">LAUNCH VEHICLE</h2>
