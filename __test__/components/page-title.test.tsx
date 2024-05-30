@@ -1,6 +1,4 @@
-import { it, expect, describe } from "vitest";
 import { render, screen } from "@testing-library/react";
-import "@testing-library/jest-dom/vitest";
 import { PageTitle } from "../../src/components/page-title";
 
 describe("Page Title", () => {
