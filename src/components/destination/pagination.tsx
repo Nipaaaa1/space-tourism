@@ -3,7 +3,20 @@
 import { useStore } from "@/app/store/store";
 import { cn } from "@/lib/utils";
 
-export const TabButton = ({
+export const DestinationPagination = () => {
+  const navigation = ["MOON", "MARS", "EUROPA", "TITAN"];
+  return (
+    <ul className="navigation flex h-8 items-start justify-center gap-8 text-light-blue *:h-full xl:justify-start">
+      {navigation.map((value, index) => (
+        <PaginationButton key={index} index={index}>
+          {value}
+        </PaginationButton>
+      ))}
+    </ul>
+  );
+};
+
+const PaginationButton = ({
   children,
   index,
 }: {

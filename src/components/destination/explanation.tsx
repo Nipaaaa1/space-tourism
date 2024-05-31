@@ -9,7 +9,7 @@ interface DataType {
   distance: string;
   travelTime: string;
 }
-export const DestinationDetail = ({ data }: { data: DataType[] }) => {
+export const DestinationExplanation = ({ data }: { data: DataType[] }) => {
   const currentTab = useStore((state) => state.currentTab);
   const details = data[currentTab];
   return (
