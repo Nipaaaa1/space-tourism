@@ -1,6 +1,4 @@
-import { CrewContent } from "@/components/crew/content";
 import { PageTitle } from "@/components/page-title";
-import Image from "next/image";
 
 import bgImage from "@/assets/technology/bg-image.png";
 import { TechnologyContent } from "@/components/technology/content";

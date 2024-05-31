@@ -1,4 +1,3 @@
-import Image from "next/image";
 import bgImage from "@/assets/destination/bg-image.png";
 import { DestinationImage } from "@/components/destination/image";
 import { TabButton } from "@/components/destination/tab-button";

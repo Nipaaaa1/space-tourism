@@ -1,6 +1,5 @@
 import bgImage from "@/assets/homepage/bg-mobile.png";
 import desktopBgImage from "@/assets/homepage/bg-desktop.png";
-import Image from "next/image";
 import { Explore } from "@/components/explore";
 import { Metadata } from "next";
 import { BgImage } from "@/components/bg-image";

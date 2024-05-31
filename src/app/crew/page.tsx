@@ -1,9 +1,5 @@
-import Image from "next/image";
 import bgImage from "@/assets/crew/bg-image.png";
 import { PageTitle } from "@/components/page-title";
-import { CrewExplanation } from "@/components/crew/explanation";
-import { CrewPagination } from "@/components/crew/pagination";
-import { CrewImage } from "@/components/crew/image";
 import { CrewContent } from "@/components/crew/content";
 import { Metadata } from "next";
 import { BgImage } from "@/components/bg-image";
