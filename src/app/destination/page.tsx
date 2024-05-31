@@ -4,6 +4,11 @@ import { DestinationImage } from "@/components/destination/image";
 import { TabButton } from "@/components/destination/tab-button";
 import data from "@/app/data.json";
 import { DestinationDetail } from "@/components/destination/detail";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Space Tourism | Destination",
+};
 
 export default function Destination() {
   const navigation = ["MOON", "MARS", "EUROPA", "TITAN"];
