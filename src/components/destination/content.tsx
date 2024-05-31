@@ -1,4 +1,4 @@
-import data from "@/app/data.json";
+import data from "@/app/data/destination-data.json";
 
 import { DestinationExplanation } from "./explanation";
 import { DestinationImage } from "./image";
