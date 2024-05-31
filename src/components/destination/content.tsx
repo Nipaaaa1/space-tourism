@@ -1,6 +1,6 @@
 import data from "@/app/data.json";
 
-import { DestinationDetail } from "./detail";
+import { DestinationExplanation } from "./explanation";
 import { DestinationImage } from "./image";
 import { DestinationPagination } from "./pagination";
 
@@ -13,7 +13,7 @@ export const DestinationContent = () => {
       <div className="md:py-[11.5px] xl:w-full">
         <div className="space-y-6 md:mx-auto md:max-w-[514px] xl:mx-0 xl:px-10">
           <DestinationPagination />
-          <DestinationDetail data={data} />
+          <DestinationExplanation data={data} />
         </div>
       </div>
     </div>
