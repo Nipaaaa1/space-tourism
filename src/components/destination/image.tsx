@@ -1,10 +1,12 @@
 "use client";
 
 import Image from "next/image";
+
 import MoonImage from "@/assets/destination/moon-image.png";
 import MarsImage from "@/assets/destination/mars-image.png";
 import EuropaImage from "@/assets/destination/europa-image.png";
 import TitanImage from "@/assets/destination/titan-image.png";
+
 import { useStore } from "@/app/store/store";
 
 export const DestinationImage = () => {
