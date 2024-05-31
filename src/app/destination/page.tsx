@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Space Tourism | Destination",
 };
 
-export default function Destination() {
+export default function DestinationPage() {
   return (
     <>
       <BgImage bgImage={bgImage} />

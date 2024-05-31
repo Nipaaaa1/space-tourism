@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Space Tourism | Home",
 };
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <BgImage bgImage={bgImage} desktopImage={desktopBgImage} />
