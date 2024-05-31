@@ -5,6 +5,7 @@ import { TabButton } from "@/components/destination/tab-button";
 import data from "@/app/data.json";
 import { DestinationDetail } from "@/components/destination/detail";
 import { Metadata } from "next";
+import { BgImage } from "@/components/bg-image";
 
 export const metadata: Metadata = {
   title: "Space Tourism | Destination",
@@ -14,12 +15,7 @@ export default function Destination() {
   const navigation = ["MOON", "MARS", "EUROPA", "TITAN"];
   return (
     <>
-      <Image
-        className="absolute inset-0 -z-[1] object-cover"
-        src={bgImage}
-        alt=""
-        fill={true}
-      />
+      <BgImage bgImage={bgImage} />
       <section className="flex flex-1 flex-col p-6 text-white md:p-10 xl:py-12">
         {/* box-1 */}
         <div className="flex flex-1 flex-col gap-6 md:mx-auto">

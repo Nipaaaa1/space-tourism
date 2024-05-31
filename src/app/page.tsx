@@ -3,6 +3,7 @@ import desktopBgImage from "@/assets/homepage/bg-desktop.png";
 import Image from "next/image";
 import { Explore } from "@/components/explore";
 import { Metadata } from "next";
+import { BgImage } from "@/components/bg-image";
 
 export const metadata: Metadata = {
   title: "Space Tourism | Home",
@@ -11,18 +12,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Image
-        src={bgImage}
-        className="absolute inset-0 -z-[1] object-cover xl:hidden"
-        fill={true}
-        alt=""
-      />
-      <Image
-        src={desktopBgImage}
-        className="absolute inset-0 -z-[1] hidden object-cover xl:block"
-        fill={true}
-        alt=""
-      />
+      <BgImage bgImage={bgImage} desktopImage={desktopBgImage} />
       <section className="flex flex-1 flex-col p-6 md:gap-[66px] md:p-32 xl:flex-row xl:items-end xl:px-[10.3125rem] xl:py-32">
         <div className="flex w-full flex-1 flex-col md:gap-[66px] xl:flex-row">
           <div className="flex flex-col gap-6 text-center text-light-blue xl:max-w-[540px] xl:text-left">
