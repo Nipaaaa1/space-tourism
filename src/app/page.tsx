@@ -2,6 +2,11 @@ import bgImage from "@/assets/homepage/bg-mobile.png";
 import desktopBgImage from "@/assets/homepage/bg-desktop.png";
 import Image from "next/image";
 import { Explore } from "@/components/explore";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Space Tourism | Home",
+};
 
 export default function Home() {
   return (

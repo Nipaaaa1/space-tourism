@@ -5,6 +5,11 @@ import { CrewExplanation } from "@/components/crew/explanation";
 import { CrewPagination } from "@/components/crew/pagination";
 import { CrewImage } from "@/components/crew/image";
 import { CrewContent } from "@/components/crew/content";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Space Tourism | Crew",
+};
 
 export default function CrewPage() {
   return (

@@ -4,6 +4,11 @@ import Image from "next/image";
 
 import bgImage from "@/assets/technology/bg-image.png";
 import { TechnologyContent } from "@/components/technology/content";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Space Tourism | Technology",
+};
 
 export default function TechnologyPage() {
   return (
